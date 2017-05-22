@@ -6,7 +6,7 @@ class HackAssembler < Formula
   depends_on("haskell-stack" => :build)
   bottle do
     root_url "http://localhost:8081"
-    sha256 "e3fea58be58780e71fa5e98f80b7544aef24bb5951ca583671d0a2f465c525d0" => :yosemite
+    sha256 "4be7efbbfb251b46a860080b753bd280b36726e1d8b7815893e35354ae33f730" => :yosemite
   end
   def install
     system("stack", "setup")
