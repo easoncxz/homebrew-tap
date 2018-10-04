@@ -11,7 +11,7 @@ class HackAssembler < Formula
     sha256("4be7efbbfb251b46a860080b753bd280b36726e1d8b7815893e35354ae33f730" => :yosemite)
   end
   def install
-    system("stack", "setup")
+    system("stack", "setup", "--verbose")
     system("stack", "build")
     prefix = `#{"stack path --dist-dir"}`.chomp
     bin.install("#{prefix}#{"/build/hack-assembler/hack-assembler"}")
