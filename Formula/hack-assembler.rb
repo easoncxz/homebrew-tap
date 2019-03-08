@@ -9,7 +9,7 @@ class HackAssembler < Formula
     rebuild(1)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
     sha256("4be7efbbfb251b46a860080b753bd280b36726e1d8b7815893e35354ae33f730" => :yosemite)
-    sha256("d985f1ec04a7a2c1cbf493362045f436e626e82e3e00b63e279504089c0ac2fd" => :high_sierra)
+    sha256("43d1f645a31ea17f93ab1442b7f748689899b196e4877cc28e0aa71089232b5d" => :high_sierra)
   end
   def install
     system("stack", "setup", "--verbose")
