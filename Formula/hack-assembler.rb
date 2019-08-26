@@ -1,13 +1,13 @@
 class HackAssembler < Formula
   desc("A toy assembler for the Hack machine language")
   homepage("https://github.com/easoncxz/hack-assembler")
-  url("https://github.com/easoncxz/hack-assembler/archive/v0.1.1.18.tar.gz")
-  sha256("126e8e576d206820909a5cccd6caad514670e80f4d109077c8d130af0f385e04")
+  url("https://github.com/easoncxz/hack-assembler/archive/v0.1.1.26.tar.gz")
+  sha256("6db06492498052a128d0335e3ee2a0617967859fa7995230e88b4d6ae690c515")
   depends_on("haskell-stack" => :build)
   bottle do
     cellar(:any_skip_relocation)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
-    sha256("8edbe80cebbc107944b9a4f952c368666242917faa212e7b684983b7ba53e02b" => :high_sierra)
+    sha256("67679066f89f5c8dce11fbc501f96acdd324f68498a2658efb368df33b698fab" => :gz)
   end
   def install
     system("stack", "setup", "--verbose")
