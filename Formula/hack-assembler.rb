@@ -6,6 +6,7 @@ class HackAssembler < Formula
   depends_on("haskell-stack" => :build)
   bottle do
     cellar(:any_skip_relocation)
+    rebuild(1)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
     sha256("67679066f89f5c8dce11fbc501f96acdd324f68498a2658efb368df33b698fab" => :high_sierra)
   end
