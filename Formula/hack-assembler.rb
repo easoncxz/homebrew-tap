@@ -8,7 +8,6 @@ class HackAssembler < Formula
     cellar(:any_skip_relocation)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
     sha256("8a8701f364b56d6c7ecd11d108a15037cc46d70e05a8f1d665a2fd79a32b7d9b" => :high_sierra)
-    sha256("67679066f89f5c8dce11fbc501f96acdd324f68498a2658efb368df33b698fab" => :gz)
   end
   def install
     system("stack", "setup", "--verbose")
