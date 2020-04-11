@@ -7,6 +7,7 @@ class Hello < Formula
   bottle do
     cellar(:any_skip_relocation)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
+    sha256("ccf48f4803d39c0dcca9be288aa462b25bc4b7e960c279e66eb104616c7e3fda" => :high_sierra)
     sha256("e35d573feb3a1bc81208f00f30b2d98a9cd4420ce69d7fbf1aff076118c8c96e" => :catalina)
   end
   def install
