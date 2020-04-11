@@ -1,8 +1,8 @@
 class Hello < Formula
   desc("A trivial program")
   homepage("https://github.com/easoncxz/hello")
-  url("https://github.com/easoncxz/hello/archive/v0.0.12.tar.gz")
-  sha256("2cbb1a83d788e37670c75a96e2b485f3ef9e304f7b946dde79dfd5ba99b49b26")
+  url("https://github.com/easoncxz/hello/archive/v0.0.13.tar.gz")
+  sha256("deb54cde8560b4eb97000b6819a3646ebf98aab689ddce12f6c84410e56780f6")
   depends_on("gcc@9" => :build)
   bottle do
     cellar(:any_skip_relocation)
