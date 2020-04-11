@@ -7,6 +7,7 @@ class Hello < Formula
   bottle do
     cellar(:any_skip_relocation)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
+    sha256("59a245c9eda8be7babbbdde4571f63d6099708f11f0b9c23c8115a23e9c90130" => :catalina)
   end
   def install
     system("./build.sh")
