@@ -3,7 +3,7 @@ class Hello < Formula
   desc("A trivial program")
   homepage("https://github.com/easoncxz/hello")
   url("https://github.com/easoncxz/hello/archive/v0.0.1.tar.gz")
-  sha256("5715bc72492c2fa235c767f804133d89f01692ae3ad16183feee71981175c187")
+  sha256("4904c9e8f79d529841cdd5eb0c17e0faa609f1be414dffb793929c2c83bc3a54")
   depends_on("gcc@9" => :build)
   bottle do
     cellar(:any_skip_relocation)
