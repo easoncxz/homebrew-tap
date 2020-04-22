@@ -2,29 +2,27 @@ My Homebrew Tap of little programs
 ==================================
 
 This repository is a [Tap][tap] for use with Mac Homebrew. Here, you can
-find some programs I've written. Most of them are small toy programs. To
-install them:
+find some programs I've written. Most of them are small toy programs.
+
+For example, to install [`hello-homebrew-packaging`](Formula/hello-homebrew-packaging.rb):
 
     $ brew tap easoncxz/tap
     ... (Brew clones this repo in the background) ...
     
-    $ brew install $SOME_FORMULA
+    $ brew install hello-homebrew-packaging
     ... (your system might be used to compile some code from source) ...
     
-Or in the case of ambiguity of names:
+Alternatively, all in one go:
 
-    $ brew install easoncxz/tap/$SOME_FORMULA
-    ... (brew will run `brew tap easoncxz/tap` if you haven't already done so) ...
+    $ brew install easoncxz/tap/hello-homebrew-packaging
+    ... (brew will run `brew tap easoncxz/tap` implicitly) ...
     
-    $ brew uninstall easoncxz/tap/$SOME_FORMULA
-    ... (stuff is uninstalled) ...
-    
-To let your Homebrew system forget about this repository:
+To undo all the above:
 
+    $ brew uninstall easoncxz/tap/hello-homebrew-packaging
+    ... ( Homebrew deletes files ) ...
+    
     $ brew untap easoncxz/tap
-
-You would still need to manually uninstall the Formulae you've already installed
-from this repository, by the usual `brew uninstall`.
 
 Many of the commits in this repository are created programmatically by my
 build servers by using a tool I created called [homebrew-automation][auto].
