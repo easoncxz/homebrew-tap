@@ -8,6 +8,7 @@ class WeiboExport < Formula
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
   end
   def install
+    system("stack", "upgrade", "--force-download")
     system("stack", "setup", "--verbose")
     system("stack", "build")
     prefix = `#{"stack path --dist-dir"}`.chomp
