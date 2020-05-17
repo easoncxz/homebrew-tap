@@ -5,6 +5,7 @@ class WeiboExport < Formula
   sha256("4b0938c442bfbde3d34037ace1024bf235f4bdf30f64319c1413d0b4cf681b07")
   depends_on("haskell-stack" => :build)
   bottle do
+    cellar(:any_skip_relocation)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
   end
   def install
