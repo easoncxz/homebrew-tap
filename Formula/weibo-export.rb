@@ -8,6 +8,7 @@ class WeiboExport < Formula
     cellar(:any_skip_relocation)
     root_url("https://dl.bintray.com/easoncxz/homebrew-bottles")
     sha256("6950bb78d2161a3d666c6283621c2c8e3b41762075178aa22e9b6681a98a293e" => :mojave)
+    sha256("83aaef5f894bda75c9237d6a3c7ab07ce00831911d671da2962d44ff231c5428" => :high_sierra)
     sha256("9ba9f7a92b246146a56418f9fd24ed95b28ca68579cb10015da562d873a49a47" => :catalina)
   end
   def install
